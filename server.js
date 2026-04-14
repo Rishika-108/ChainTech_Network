@@ -1,6 +1,8 @@
-import connectDB from "./config/db";
-import express from express;
-import dotenv from dotenv;
+import connectDB from "./config/db.js";
+import express from "express";
+import dotenv from "dotenv";
+import taskRoutes from "./routes/taskRoute.js";
+import errorHandler from "./middleware/errorMiddleware.js";
 
 dotenv.config();
 //connectDB();
